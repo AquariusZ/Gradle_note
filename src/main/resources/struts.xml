@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <!--开发者模式 默认为false-->
+    <constant name="struts.devMode" value="false"/>
+    <!--动态方法调用-->
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <constant name="struts.i18n.encoding" value="utf-8"/>
+    <!--请求后缀类型-->
+    <constant name="struts.action.extension" value="action,do,htm,html"/>
+    <!-- 浏览器缓存 默认为true 开发阶段为false禁用-->
+    <constant name="struts.serve.static.browserCache" value="false"/>
+    <!--指定有spring创建action对象-->
+    <constant name="struts.objectFactory" value="spring"/>
+
+    <!--<constant name="struts.action.excludePattern" value="/resources/.*"/>-->
+    <!-- 当配置文件修改的时候，重新加载配置文件 -->
+    <constant name="struts.configuration.xml.reload" value="true"/>
+
+
+
+    <!--<package name="test" namespace="/" extends="struts-default">-->
+    <!--<action name="test">-->
+    <!--<result>/jsp/input.jsp</result>-->
+    <!--</action>-->
+    <!--</package>-->
+</struts>
